@@ -38,6 +38,7 @@ polygon = PackedVector2Array(64, -59.6, 64, 59, 59.6, 64, -59, 64, -64, 59.6, -6
 position = Vector2(600, 200)
 physics_material_override = SubResource("PhysicsMaterial_vvkbq")
 linear_velocity = Vector2(100, 100)
+angular_velocity = 0.0174533
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Object2"]
@@ -59,6 +60,7 @@ polygon = PackedVector2Array(-64, -64, -64, 64, 64, 64, 64, -64)
 
 [node name="Gravity" type="Area2D" parent="."]
 position = Vector2(150, 300)
+gravity_space_override = 3
 gravity = 100.0
 linear_damp = 0.6
 
